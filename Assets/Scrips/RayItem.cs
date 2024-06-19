@@ -17,7 +17,7 @@ public class RayItem : MonoBehaviour , iRayItem
     {
         Debug.Log("OnPointerEnter");
         gameObjectRenderer.material.color = activeColor;
-
+        UIManager.Instance.ShowInfoPanel(gameObject,transform.position);
     }
     public void OnPointerExit()
     {
