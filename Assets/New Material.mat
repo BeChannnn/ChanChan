@@ -44,5 +44,5 @@ Material:
     - _GlossyReflections: 1
     - _Parallax: 0.02
     m_Colors:
-    - _Color: {r: 0.40537554, g: 0.5072324, b: 0.7283019, a: 1}
+    - _Color: {r: 0.09067282, g: 0.11546322, b: 0.16981131, a: 1}
   m_BuildTextureStacks: []

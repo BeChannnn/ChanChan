@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
+using Mirror;
 
-public class SpawnOctacle : MonoBehaviour
+public class SpawnOctacle : NetworkBehaviour
 {
     [SerializeField] private float spawnInterval = 1f;
     [SerializeField] private float radius = 20f;
@@ -11,14 +12,14 @@ public class SpawnOctacle : MonoBehaviour
 
     private void Update()
     {
-        _timer += Time.deltaTime;
-        if (_timer > spawnInterval )
-        {
-            _timer = 0;
-            Spawn();
-        }
+        //_timer += Time.deltaTime;
+        //if (_timer > spawnInterval )
+        //{
+            //_timer = 0;
+            //Spawn();
+        //}
     }
-    private void Spawn()
+    public void Spawn()
     {
         if (!ObjectPool.Instance.CanSpawn()) return;
 
